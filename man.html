@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<title>malware</title>
+<!<img onclick="openWin()" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Qy9hf-bIVJfdgxwzXT5GQFt9VwaZ_ELPkR8aJ0FlIGBN6bTreg5W3NLRKcuxk3s3R0A:https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjcyMS0wMzctdi5qcGc.jpg&usqp=CAU" alt="trol">
+<audio id="abcdefg" controls autoplay>
+	<source src="troll.mp3" type="audio/mp3">
+</audio>
+
+<style>
+body {
+	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3Qy9hf-bIVJfdgxwzXT5GQFt9VwaZ_ELPkR8aJ0FlIGBN6bTreg5W3NLRKcuxk3s3R0A:https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L2pvYjcyMS0wMzctdi5qcGc.jpg&usqp=CAU');
+}
+</style>
+
+<script src="jquery-3.7.0.js"></script>
+
+<script>
+
+let myWindow;
+
+/*new Audio('file:///home/chronos/u-c0fe6a7cb0ff43b119ac3619e0064762e755eea3/MyFiles/virus/troll.mp3').play();*/
+$(document).click(function(e) { 
+    if (e.button == 0) {
+        window.open("file:///home/chronos/u-c0fe6a7cb0ff43b119ac3619e0064762e755eea3/MyFiles/virus/men.html", "troll", "width=225, height=225");
+		  new Audio('file:///home/chronos/u-c0fe6a7cb0ff43b119ac3619e0064762e755eea3/MyFiles/virus/troll.mp3').play();
+    }
+});
+
+function sleep(ms) {
+  return new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+}
+
+window.hideWarning = false;
+window.addEventListener('beforeunload', (event) => {
+    if (!hideWarning) {
+        event.preventDefault();
+        event.returnValue = '';
+    }
+
+});
+
+/*async*/ function openWin() {
+  /*myWindow=window.open("file:///home/chronos/u-c0fe6a7cb0ff43b119ac3619e0064762e755eea3/MyFiles/virus/men.html", "", "width=225, height=225");*/
+
+/*while (1) {
+    var x = (Math.random() * 1366) + 1;
+	 var y = (Math.random() * 768) + 1;
+	 
+    myWindow.moveTo((Math.random() * 1366) + 1, (Math.random() * 768) + 1);
+	 
+	 await sleep(250);
+  }*/
+}
+</script>
+
+</body>
+</html>

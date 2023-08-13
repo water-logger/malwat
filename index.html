@@ -1,0 +1,116 @@
+<html>
+    <body>		  
+		  <ul class="topnav">
+         <li><a href="#home">Home</a></li>
+         <li><a href="#malware" class="active">Malware</a></li>
+         <li style="float:right"><a href="#about">About</a></li>
+        </ul>
+		  
+		  <h1>Malware Scan</h1>
+		  <p id="d">Would you like to scan your computer for malware?  </p>
+		  <p id="c">Malware Scan Complete</p>
+		  <button id="a" onClick="move()">Yes</button>
+		  <button id="b" onClick="location.replace('https://s')">No</button>
+		  
+		  <div id="myProgress">
+         <div id="myBar"></div>
+        </div>
+		  
+		  <button id="myDIV" onClick="xd()">Show Scan Results</button>
+    </body>
+	 
+	 <style>
+	   body {margin: 0;}
+		
+		#myProgress {
+		  width: 100%;
+        position: relative;
+		  background-color: grey;
+		}
+		
+		#myBar {
+        width: 0%;
+        height: 30px;
+        background-color: #04AA6D;
+        text-align: center; /* To center it horizontally (if you want) */
+        line-height: 100%; /* To center it vertically */
+        color: white;
+		  position: absolute;
+		  bottom: 0;
+      }
+
+      ul.topnav {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		}
+
+		ul.topnav li {float: left;}
+
+		ul.topnav li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+		
+		#myDIV {
+		  display: none;
+		}
+      
+		#c {
+		  display: none;
+		}
+		  
+		ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+		ul.topnav li a.active {background-color: #04AA6D;}
+
+		ul.topnav li.right {float: right;}
+	 </style>
+    
+    <script>
+	   var i = 0;
+		
+		function xd() {
+		  location.replace("file:///home/chronos/u-c0fe6a7cb0ff43b119ac3619e0064762e755eea3/MyFiles/virus/index_2.html")
+		}
+		
+		function move() {
+		  if (i == 0) {
+			 i = 1;
+			 var elem = document.getElementById("myBar");
+			 var width = 1;
+			 var id = setInterval(frame, 10);
+			 function frame() {
+				if (width >= 100) {
+		    	  var abc = document.getElementById("a");
+		        var bcd = document.getElementById("b");
+				  var cde = document.getElementById("d");
+				  var def = document.getElementById("c");
+				  var x = document.getElementById("myDIV");
+				  var y = document.getElementById("myBar");
+				
+				  clearInterval(id);
+				  i = 0;
+				  
+				  x.style.display = "block";
+				  y.style.display = "none";
+				  def.style.display = "block";
+				  cde.style.display = "none";
+	    		  abc.style.display = "none";
+		        bcd.style.display = "none";
+				} else {
+				  width++;
+				  elem.style.width = width + "%";
+				}
+			 }
+		  }
+		}
+    </script>
+</html>
+
+<!https://file.io/YwgPQjx2iU4C>
